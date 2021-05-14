@@ -1,0 +1,7 @@
+.feedback {
+  background-color: $fancy-color;
+}
+
+.feedback__wrapper {
+  @include container;
+}

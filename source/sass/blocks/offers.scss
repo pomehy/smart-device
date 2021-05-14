@@ -1,0 +1,7 @@
+.offers {
+  background-color: $basic-blue-dark;
+}
+
+.offers__wrapper {
+  @include container;
+}
