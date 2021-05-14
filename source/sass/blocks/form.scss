@@ -1,0 +1,162 @@
+.form {
+  textarea {
+    padding-top: 12px;
+    padding-right: 17px;
+    padding-bottom: 12px;
+    padding-left: 17px;
+
+    width: 100%;
+    height: 154px;
+
+    font-family: "PTMono", "Courier New", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 21px;
+
+    background-color: transparentize($basic-white, 0.9);
+
+    border: none;
+
+    overflow-y: auto;
+    resize: none;
+
+    box-sizing: border-box;
+
+    &::placeholder {
+      color: $basic-white;
+    }
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 0 1px 1px $basic-white;
+    }
+  }
+}
+
+.form__field {
+  display: flex;
+
+  margin-right: 30px;
+  margin-bottom: 40px;
+
+  max-width: 50%;
+  flex-grow: 1;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  input {
+    width: 100%;
+
+    padding-top: 12px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    padding-left: 17px;
+
+    font-family: "PTMono", "Courier New", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: $basic-white;
+
+    border: none;
+    background-color: transparentize($basic-white, 0.9);
+
+    &::placeholder {
+      color: $basic-white;
+    }
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 0 1px 1px $basic-white;
+    }
+  }
+}
+
+.form__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 39px;
+
+  button {
+    @include button;
+
+    margin-right: 38px;
+
+    max-width: 270px;
+
+    color: $basic-white;
+
+    background-color: transparent;
+    border-color: $basic-white;
+
+    &:hover,
+    &:focus {
+      background-color: $basic-white;
+      color: $fancy-color;
+    }
+  }
+
+  label {
+    position: relative;
+
+    padding-left: 32px;
+
+    font-size: 14px;
+    color: transparentize($basic-white, 0.2);
+
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      color: $basic-white;
+
+      &::before {
+        border-color: $basic-white;
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+
+      top: 0;
+      left: 0;
+
+      width: 16px;
+      height: 16px;
+
+      border: 1px solid transparentize($basic-white, 0.2);
+
+      box-sizing: border-box;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+
+      top: 5px;
+      left: 4px;
+
+      display: none;
+
+      width: 8px;
+      height: 5px;
+
+      background-image: url("../../img/decor/check-icon.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  input:checked + label {
+    &::after {
+      display: block;
+    }
+  }
+}

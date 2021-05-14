@@ -1,3 +1,56 @@
 .features__wrapper {
   @include container;
 }
+
+.features__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.features__item {
+  padding-top: 39px;
+  padding-right: 44px;
+  padding-bottom: 44px;
+  padding-left: 42px;
+
+  min-height: 299px;
+
+  border-top: 1px solid #ebebeb;
+  border-right: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  border-left: 3px solid $fancy-color;
+
+  box-sizing: border-box;
+
+  fill: $fancy-color;
+
+  h3 {
+    margin-top: 15px;
+    margin-bottom: 18px;
+
+    font-family: "Roboto-Condensed", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    color: $fancy-color;
+  }
+
+  p {
+    line-height: 21px;
+    color: $basic-grey;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $fancy-color;
+    border-color: $fancy-color;
+
+    fill: $basic-white;
+
+    h3,
+    p {
+      color: $basic-white;
+    }
+  }
+}

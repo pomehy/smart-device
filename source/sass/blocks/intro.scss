@@ -1,0 +1,67 @@
+.intro {
+  background-color: $basic-blue-dark;
+}
+
+.intro__wrapper {
+  @include container;
+
+  display: flex;
+  align-items: center;
+
+  max-width: 1412px;
+  min-height: 100vh;
+}
+
+.intro__description {
+  h2 {
+    margin-top: 0;
+    margin-bottom: 26px;
+
+    font-family: "Roboto-Condensed", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 93.75px;
+    letter-spacing: 0.07em;
+    color: $basic-white;
+
+    text-transform: uppercase;
+  }
+
+  p {
+    margin-left: 94px;
+    max-width: 683px;
+
+    font-size: 22px;
+    line-height: 35px;
+    color: $basic-white;
+  }
+
+  a {
+    @include button;
+
+    margin-top: 42px;
+    margin-left: 94px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+
+    max-width: 407px;
+
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    color: $basic-white;
+
+    background-color: $fancy-color;
+    border-color: $fancy-color;
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      color: $fancy-color;
+    }
+  }
+}
+
+.intro__scroll-down {
+  position: absolute;
+}

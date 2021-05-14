@@ -67,5 +67,12 @@
     text-decoration: none;
 
     border-color: $basic-white;
+
+    &:hover,
+    &:focus {
+      border-color: $fancy-color;
+      background-color: $fancy-color;
+      color: $basic-white;
+    }
   }
 }
