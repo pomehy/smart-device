@@ -38,6 +38,7 @@
   letter-spacing: 0.05em;
   color: $basic-black;
   text-transform: uppercase;
+  text-decoration: none;
 
   border-width: 1px;
   border-style: solid;
@@ -47,12 +48,7 @@
 
   box-sizing: border-box;
 
-  &:hover,
-  &:focus {
-    opacity: 0.8;
-  }
-
   &:active {
-    opacity: 0.5;
+    opacity: 0.6;
   }
 }
