@@ -1,5 +1,44 @@
 .about__wrapper {
   @include container;
+
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    left: -405px;
+    bottom: -46px;
+
+    width: 636px;
+    height: 636px;
+
+    background-image: url("../../img/decor/polygon-grey.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+
+    left: -228px;
+    right: 0;
+    bottom: 253px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 636px;
+    height: 640px;
+
+    background-image: url("../../img/decor/polygon-grey.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    transform: rotate(180deg);
+  }
 }
 
 .about__description {
@@ -57,4 +96,3 @@
     }
   }
 }
-

@@ -15,8 +15,14 @@
   align-items: center;
 
   padding-top: 32px;
+  padding-right: 7px;
+  padding-left: 7px;
 
-  max-width: 1412px;
+  max-width: 1440px;
+}
+
+.page-header__logo {
+  padding-left: 6px;
 }
 
 .page-header__contacts {
@@ -60,6 +66,8 @@
 }
 
 .page-header__callback {
+  padding-right: 10px;
+
   a {
     @include button;
 

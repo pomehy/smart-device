@@ -5,8 +5,41 @@
 .feedback__wrapper {
   @include container;
 
+  position: relative;
+
   display: flex;
   justify-content: flex-end;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+
+    top: 70px;
+    left: -25px;
+
+    width: 511px;
+    height: 288px;
+
+    background-image: url("../../img/decor/feedback-bg-airplane.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    left: -200px;
+    bottom: -23px;
+
+    width: 670px;
+    height: 640px;
+
+    background-image: url("../../img/decor/polygon-double.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 .feedback__content {

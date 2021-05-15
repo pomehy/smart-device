@@ -1,0 +1,18 @@
+.socials {
+  ul {
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  li {
+    margin-right: 15px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
