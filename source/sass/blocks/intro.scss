@@ -11,8 +11,8 @@
 
   position: relative;
 
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  align-items: center;
 
   padding-right: 7px;
   padding-left: 7px;
@@ -22,7 +22,9 @@
 }
 
 .intro__description {
-  margin-top: 198px;
+  position: relative;
+  z-index: 1;
+  width: 100%;
 
   h2 {
     margin-top: 0;
@@ -31,16 +33,19 @@
     font-family: "Roboto-Condensed", "Arial", sans-serif;
     font-weight: 700;
     font-size: 80px;
+    // font-size: calc(60px + 20 * (100vw - 1024px) / 416);
     line-height: 94px;
-    letter-spacing: 0.07em;
+    letter-spacing: 0.065em;
     color: $basic-white;
 
     text-transform: uppercase;
   }
 
   p {
-    margin-left: 101px;
+    // margin-left: 101px;
+    margin-left: 14.1%;
     max-width: 683px;
+    // max-width: 86%;
 
     font-size: 22px;
     line-height: 34px;
@@ -91,19 +96,22 @@
 }
 
 .intro__image-wrapper {
-  position: relative;
+  position: absolute;
+  left: 51%;
 
   align-self: center;
 
   width: 100%;
+  // max-width: 49.4%;
+  max-width: 705px;
   min-height: 515px;
 
   &::before {
     content: "";
     position: absolute;
 
-    top: -123px;
-    right: -27px;
+    top: -24%;
+    right: -35px;
 
     width: 670px;
     height: 641px;
@@ -111,12 +119,15 @@
     background-image: url("../../img/decor/polygon-double.svg");
     background-position: center;
     background-repeat: no-repeat;
+    background-size: contain;
   }
 
   img {
     position: absolute;
-    top: 16px;
-    right: -70px;
+    top: 3.1%;
+    right: -9.9%;
+
+    width: 98.9%;
   }
 }
 

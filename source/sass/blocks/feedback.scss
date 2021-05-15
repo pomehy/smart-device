@@ -16,7 +16,7 @@
     z-index: 1;
 
     top: 70px;
-    left: -25px;
+    right: 58.4%;
 
     width: 511px;
     height: 288px;
@@ -30,7 +30,7 @@
     content: "";
     position: absolute;
 
-    left: -200px;
+    right: 59.8%;
     bottom: -23px;
 
     width: 670px;
@@ -43,6 +43,8 @@
 }
 
 .feedback__content {
+  position: relative;
+  z-index: 1;
   max-width: 573px;
 
   h3 {

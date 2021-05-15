@@ -5,7 +5,8 @@
 .legal-info__wrapper {
   @include container;
 
-  display: flex;
+  display: grid;
+  grid-template-columns: max-content auto auto;
   align-items: center;
 
   padding-right: 11px;
@@ -36,10 +37,12 @@
 }
 
 .legal-info__copyright {
-  margin-right: 138px;
+  min-width: 457px;
 
   ul {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     margin: 0;
     padding: 0;
@@ -48,20 +51,27 @@
   }
 
   li {
-    margin-right: 75px;
-
-    &:last-child {
-      margin-right: 0;
-    }
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 }
 
 .legal-info__privacy {
+  justify-self: center;
+
   ul {
     margin: 0;
     padding: 0;
 
     list-style: none;
+  }
+
+  li {
+    margin-right: 16%;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
@@ -76,5 +86,5 @@
 }
 
 .legal-info__developer {
-  margin-left: auto;
+  justify-self: end;
 }
