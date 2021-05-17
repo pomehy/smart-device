@@ -19,10 +19,18 @@
   padding-left: 7px;
 
   max-width: 1440px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 20px;
+  }
 }
 
 .page-header__logo {
   padding-left: 6px;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 0;
+  }
 }
 
 .page-header__contacts {
@@ -58,10 +66,39 @@
     line-height: 18px;
     color: $basic-white;
     text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $fancy-color;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
   }
 
   svg {
     margin-right: 20px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-right: 0;
+    padding-bottom: 7px;
+
+    li {
+      margin-right: 33px;
+    }
+
+    svg {
+      margin-right: 0;
+
+      width: 24px;
+      height: 24px;
+    }
+
+    span {
+      display: none;
+    }
   }
 }
 
@@ -82,5 +119,9 @@
       background-color: $fancy-color;
       color: $basic-white;
     }
+  }
+
+  @media (max-width: $tablet-width) {
+    display: none;
   }
 }

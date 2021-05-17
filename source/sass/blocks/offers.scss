@@ -18,12 +18,28 @@
     line-height: 51px;
     color: $basic-white;
   }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 49px;
+
+    p {
+      padding-right: 10px;
+
+      font-size: 32px;
+      line-height: 45px;
+    }
+  }
 }
 
 .offers__list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
+
+  @media (max-width: $tablet-width) {
+    grid-template-columns: auto;
+    gap: 46px;
+  }
 }
 
 .offers__item {
@@ -99,5 +115,16 @@
 
   &:active {
     opacity: 0.7;
+  }
+
+  @media (max-width: $tablet-width) {
+    height: 256px;
+
+    a {
+      padding-top: 40px;
+      padding-left: 43px;
+      padding-right: 43px;
+      padding-bottom: 40px;
+    }
   }
 }

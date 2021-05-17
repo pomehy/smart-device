@@ -4,23 +4,48 @@
 
 .page-main__intro {
   padding-top: 120px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .page-main__features {
   padding-top: 111px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 54px;
+  }
 }
 
 .page-main__about {
   padding-top: 105px;
   padding-bottom: 110px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 56px;
+    padding-bottom: 83px;
+
+    overflow: hidden;
+  }
 }
 
 .page-main__offers {
   padding-top: 88px;
   padding-bottom: 127px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 50px;
+    padding-bottom: 78px;
+  }
 }
 
 .page-main__feedback {
   padding-top: 91px;
   padding-bottom: 113px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 80px;
+    padding-bottom: 103px;
+  }
 }

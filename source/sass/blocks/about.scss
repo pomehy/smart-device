@@ -39,6 +39,13 @@
 
     transform: rotate(180deg);
   }
+
+  @media (max-width: $tablet-width) {
+    &::after {
+      left: 181px;
+      bottom: 187px;
+    }
+  }
 }
 
 .about__description {
@@ -73,13 +80,6 @@
     color: $basic-grey;
   }
 
-  p {
-    margin-bottom: 20px;
-
-    line-height: 22px;
-    color: $basic-grey;
-  }
-
   a {
     @include button;
 
@@ -93,6 +93,48 @@
     &:focus {
       background-color: $fancy-color;
       color: $basic-white;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-left: 185px;
+
+    &::before {
+      top: 2px;
+      left: -33px;
+      width: 177px;
+      height: 354px;
+    }
+
+    h2 {
+      margin-bottom: 9px;
+
+      font-size: 32px;
+      line-height: 45px;
+    }
+
+    a {
+      margin-top: 43px;
+    }
+  }
+}
+
+.about__text {
+  p {
+    margin-bottom: 20px;
+
+    line-height: 22px;
+    color: $basic-grey;
+  }
+
+  @media (max-width: $tablet-width) {
+    max-height: 210px;
+    overflow: hidden;
+
+    p {
+      &:last-of-type {
+        text-overflow: ellipsis;
+      }
     }
   }
 }

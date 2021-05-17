@@ -34,6 +34,11 @@
       opacity: 0.3;
     }
   }
+
+  @media (max-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .legal-info__copyright {
@@ -53,6 +58,10 @@
   li {
     padding-top: 5px;
     padding-bottom: 5px;
+  }
+
+  @media (max-width: $tablet-width) {
+    display: none;
   }
 }
 
@@ -82,6 +91,13 @@
     padding-right: 5px;
     padding-bottom: 14px;
     padding-left: 5px;
+  }
+
+  @media (max-width: $tablet-width) {
+    a {
+      padding-right: 0;
+      padding-left: 0;
+    }
   }
 }
 

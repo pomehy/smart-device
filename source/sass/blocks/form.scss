@@ -31,6 +31,10 @@
     &:focus {
       box-shadow: 0 0 1px 1px $basic-white;
     }
+
+    @media (max-width: $tablet-width) {
+      height: 160px;
+    }
   }
 }
 
@@ -73,6 +77,10 @@
     &:focus {
       box-shadow: 0 0 1px 1px $basic-white;
     }
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 43px;
   }
 }
 
@@ -157,6 +165,16 @@
   input:checked + label {
     &::after {
       display: block;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-top: 40px;
+
+    button {
+      margin-right: 41px;
+      padding-bottom: 15px;
+      max-width: 279px;
     }
   }
 }

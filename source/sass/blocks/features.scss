@@ -1,5 +1,10 @@
 .features__wrapper {
   @include container;
+
+  @media (max-width: $tablet-width) {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
 }
 
 .features__list {
@@ -53,6 +58,24 @@
     h3,
     p {
       color: $basic-white;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-top: 23px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+
+    min-height: 232px;
+
+    h3 {
+      margin-top: 3px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-top: 0;
     }
   }
 }
