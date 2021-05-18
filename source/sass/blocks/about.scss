@@ -149,9 +149,6 @@
   }
 
   @media (max-width: $tablet-width) {
-    max-height: 210px;
-    overflow: hidden;
-
     p {
       &:last-of-type {
         position: relative;
@@ -161,8 +158,6 @@
   }
 
   @media (max-width: $mobile-width) {
-    min-height: 363px;
-
     p {
       margin-bottom: 40px;
       padding-right: 0;
