@@ -16,6 +16,10 @@
   @media (max-width: $tablet-width) {
     padding-top: 54px;
   }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 36px;
+  }
 }
 
 .page-main__about {
@@ -28,6 +32,11 @@
 
     overflow: hidden;
   }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 54px;
+    padding-bottom: 65px;
+  }
 }
 
 .page-main__offers {
@@ -38,6 +47,10 @@
     padding-top: 50px;
     padding-bottom: 78px;
   }
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 64px;
+  }
 }
 
 .page-main__feedback {
@@ -47,5 +60,10 @@
   @media (max-width: $tablet-width) {
     padding-top: 80px;
     padding-bottom: 103px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 30px;
+    padding-bottom: 43px;
   }
 }

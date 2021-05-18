@@ -15,4 +15,15 @@
       margin-right: 0;
     }
   }
+
+  a {
+    display: flex;
+
+    fill: #cdcdcd;
+
+    &:hover,
+    &:focus {
+      fill: $fancy-color;
+    }
+  }
 }

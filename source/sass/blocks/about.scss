@@ -117,12 +117,33 @@
       margin-top: 43px;
     }
   }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 0;
+
+    &::before {
+      display: none;
+    }
+
+    h2 {
+      margin-bottom: 5px;
+
+      font-size: 28px;
+      line-height: 39px;
+    }
+
+    a {
+      margin-top: 29px;
+    }
+  }
 }
 
 .about__text {
   p {
     margin-bottom: 20px;
+    padding-right: 5px;
 
+    font-size: 16px;
     line-height: 22px;
     color: $basic-grey;
   }
@@ -133,8 +154,18 @@
 
     p {
       &:last-of-type {
+        position: relative;
         text-overflow: ellipsis;
       }
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    min-height: 363px;
+
+    p {
+      margin-bottom: 40px;
+      padding-right: 0;
     }
   }
 }

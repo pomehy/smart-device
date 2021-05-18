@@ -85,6 +85,19 @@
       line-height: 45px;
     }
   }
+
+  @media (max-width: $mobile-width) {
+    h3 {
+      margin-bottom: 15px;
+
+      font-size: 28px;
+      line-height: 39px;
+    }
+
+    p {
+      padding-left: 0;
+    }
+  }
 }
 
 .feedback__form {
@@ -103,5 +116,10 @@
 
   @media (max-width: $tablet-width) {
     margin-top: 54px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 26px;
+    padding-left: 0;
   }
 }

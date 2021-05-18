@@ -29,6 +29,18 @@
       line-height: 45px;
     }
   }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 42px;
+
+    p {
+      padding-right: 0;
+      padding-left: 10px;
+
+      font-size: 28px;
+      line-height: 39px;
+    }
+  }
 }
 
 .offers__list {
@@ -39,6 +51,10 @@
   @media (max-width: $tablet-width) {
     grid-template-columns: auto;
     gap: 46px;
+  }
+
+  @media (max-width: $mobile-width) {
+    gap: 30px;
   }
 }
 
@@ -125,6 +141,15 @@
       padding-left: 43px;
       padding-right: 43px;
       padding-bottom: 40px;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    a {
+      padding-top: 20px;
+      padding-left: 35px;
+      padding-right: 35px;
+      padding-bottom: 20px;
     }
   }
 }

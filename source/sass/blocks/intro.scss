@@ -25,29 +25,36 @@
 
     overflow: hidden;
   }
+
+  @media (max-width: $mobile-width) {
+    min-height: 648px;
+  }
 }
 
 .intro__description {
   position: relative;
   z-index: 1;
+
+  margin-bottom: 70px;
   width: 100%;
 
   h2 {
     margin-top: 0;
-    margin-bottom: 26px;
+    margin-bottom: 18px;
 
     font-family: "Roboto-Condensed", "Arial", sans-serif;
     font-weight: 700;
     font-size: 80px;
     line-height: 94px;
-    letter-spacing: 0.065em;
+    letter-spacing: 0.06em;
     color: $basic-white;
 
     text-transform: uppercase;
   }
 
   p {
-    margin-left: 14.1%;
+    margin-top: 0;
+    margin-left: 7.1%;
     max-width: 683px;
 
     font-size: 22px;
@@ -99,6 +106,7 @@
 
   @media (max-width: $tablet-width) {
     margin-top: 25px;
+    margin-bottom: 0;
     padding-left: 63px;
 
     h2 {
@@ -135,11 +143,44 @@
       max-width: 379px;
     }
   }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 215px;
+
+    padding-left: 0;
+
+    h2 {
+      font-size: 40px;
+      line-height: 46px;
+    }
+
+    p {
+      margin-left: 17.8%;
+
+      font-size: 16px;
+      line-height: 25px;
+    }
+
+    a {
+      position: relative;
+
+      margin-top: 41px;
+      margin-left: 0;
+
+      &::after {
+        content: attr(data-mobile-text);
+      }
+
+      span {
+        display: none;
+      }
+    }
+  }
 }
 
 .intro__image-wrapper {
   position: absolute;
-  left: 51%;
+  left: 50.2%;
 
   align-self: center;
 
@@ -172,6 +213,8 @@
   }
 
   @media (max-width: $tablet-width) {
+    left: 51.2%;
+
     &::before {
       top: -133px;
       right: 126px;
@@ -185,6 +228,22 @@
       right: 17.3%;
 
       width: 66%;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    left: 19.5%;
+    top: 66px;
+
+    &::before {
+      top: -112px;
+      right: -288px;
+
+      height: 483px;
+    }
+
+    img {
+      width: 94%;
     }
   }
 }
@@ -201,5 +260,9 @@
     font-size: 14px;
     color: transparentize($basic-white, 0.5);
     text-decoration: none;
+  }
+
+  @media (max-width: $mobile-width) {
+    display: none;
   }
 }
