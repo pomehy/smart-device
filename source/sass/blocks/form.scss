@@ -1,4 +1,11 @@
 .form {
+  ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
   textarea {
     padding-top: 12px;
     padding-right: 17px;
@@ -13,6 +20,7 @@
     font-style: normal;
     font-size: 16px;
     line-height: 21px;
+    color: $basic-white;
 
     background-color: transparentize($basic-white, 0.9);
 
@@ -33,15 +41,84 @@
     }
   }
 
+  button[type="submit"] {
+    @include button;
+
+    margin-right: 38px;
+
+    max-width: 270px;
+
+    color: $basic-white;
+
+    background-color: transparent;
+    border-color: $basic-white;
+
+    &:hover,
+    &:focus {
+      background-color: $basic-white;
+      color: $fancy-color;
+    }
+  }
+
   @media (max-width: $tablet-width) {
     textarea {
       height: 160px;
+    }
+
+    button[type="submit"] {
+      margin-right: 41px;
+      padding-bottom: 15px;
+      max-width: 279px;
     }
   }
 
   @media (max-width: $mobile-width) {
     textarea {
       height: 104px;
+    }
+
+    button[type="submit"] {
+      margin-right: 0;
+      margin-bottom: 31px;
+
+      max-width: 100%;
+    }
+  }
+}
+
+.form--modal {
+  .form__field {
+    margin-right: 0;
+    margin-bottom: 30px;
+
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .form__footer {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  button[type="submit"] {
+    margin-right: 0;
+    margin-bottom: 34px;
+
+    max-width: 100%;
+  }
+
+  textarea {
+    height: 104px;
+  }
+
+  .form__field--personal-data {
+    input {
+      left: -45px;
+    }
+
+    label {
+      padding-left: 50px;
     }
   }
 }
@@ -100,36 +177,20 @@
   }
 }
 
-.form__footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.form__field--personal-data {
+  position: relative;
 
-  margin-top: 39px;
+  margin-bottom: 0;
 
-  button {
-    @include button;
-
-    margin-right: 38px;
-
-    max-width: 270px;
-
-    color: $basic-white;
-
-    background-color: transparent;
-    border-color: $basic-white;
-
-    &:hover,
-    &:focus {
-      background-color: $basic-white;
-      color: $fancy-color;
-    }
+  input {
+    top: 5px;
   }
 
   label {
     position: relative;
 
     padding-left: 32px;
+    max-width: 337px;
 
     font-size: 14px;
     color: transparentize($basic-white, 0.2);
@@ -187,26 +248,21 @@
       display: block;
     }
   }
+}
+
+.form__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 39px;
 
   @media (max-width: $tablet-width) {
     margin-top: 40px;
-
-    button {
-      margin-right: 41px;
-      padding-bottom: 15px;
-      max-width: 279px;
-    }
   }
 
   @media (max-width: $mobile-width) {
     flex-direction: column;
     margin-top: 26px;
-
-    button {
-      margin-right: 0;
-      margin-bottom: 31px;
-
-      max-width: 100%;
-    }
   }
 }

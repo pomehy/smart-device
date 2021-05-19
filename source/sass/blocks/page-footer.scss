@@ -254,6 +254,8 @@
       display: flex;
       align-items: center;
 
+      cursor: pointer;
+
       &::before,
       &::after {
         content: "";
@@ -269,6 +271,15 @@
       &::after {
         transform: rotate(90deg);
       }
+
+      &:hover,
+      &:focus {
+        opacity: 0.7;
+      }
+
+      &:active {
+        opacity: 0.5;
+      }
     }
 
     ul {
@@ -282,6 +293,23 @@
     padding-bottom: 26px;
 
     h2 {
+      &::after {
+        display: none;
+      }
+    }
+
+    ul {
+      display: block;
+    }
+  }
+}
+
+.page-footer__accordion--nojs {
+  @media (max-width: $mobile-width) {
+    padding-bottom: 26px;
+
+    h2 {
+      &::before,
       &::after {
         display: none;
       }
