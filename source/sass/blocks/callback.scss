@@ -1,0 +1,33 @@
+.callback__content {
+  padding-top: 29px;
+  padding-right: 39px;
+  padding-bottom: 11px;
+  padding-left: 39px;
+
+  background-color: $fancy-color;
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 14px;
+
+    font-family: "Roboto-Condensed", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 39px;
+    color: $basic-white;
+    text-align: start;
+  }
+
+  p {
+    margin-top: 0;
+    padding-left: 4px;
+
+    line-height: 21px;
+    color: $basic-white;
+    text-align: start;
+  }
+}
+
+.callback__form {
+  margin-top: 34px;
+}
