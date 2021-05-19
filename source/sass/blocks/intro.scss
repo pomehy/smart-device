@@ -1,9 +1,13 @@
 .intro {
   background-color: $basic-blue-dark;
-  background-image: url("../../img/intro-bg-desktop.png");
+  background-image: url("../../img/intro-bg-desktop@1x.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(".././img/intro-bg-desktop@2x.jpg");
+  }
 }
 
 .intro__wrapper {

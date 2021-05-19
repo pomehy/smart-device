@@ -63,10 +63,15 @@
     width: 155px;
     height: 317px;
 
-    background-image: url("../../img/about-year-desktop.jpg");
+    background-image: url("../../img/about-year-desktop@1x.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: $fancy-color;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/about-year-desktop@2x.jpg");
+    }
   }
 
   h2 {

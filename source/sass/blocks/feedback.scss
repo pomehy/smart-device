@@ -21,9 +21,13 @@
     width: 511px;
     height: 288px;
 
-    background-image: url("../../img/decor/feedback-bg-airplane.png");
+    background-image: url("../../img/decor/feedback-bg-airplane@1x.png");
     background-repeat: no-repeat;
     background-size: contain;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/decor/feedback-bg-airplane@2x.png");
+    }
   }
 
   &::after {
