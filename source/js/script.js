@@ -108,7 +108,7 @@
 
   if (accrodionElements) {
     for (let i = 0; i < accrodionElements.length; i++) {
-      accrodionElements[i].classList.remove('page-footer__accordion--nojs')
+      accrodionElements[i].classList.remove('page-footer__accordion--nojs');
     }
   }
 
