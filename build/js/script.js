@@ -144,7 +144,10 @@
       evt.preventDefault();
       modalCallback.classList.add('modal--show');
       pageBody.classList.add('page-body--no-scroll');
-      callbackUserName.focus();
+
+      if (callbackUserName) {
+        callbackUserName.focus();
+      }
     });
   }
 
