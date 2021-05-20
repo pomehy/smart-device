@@ -1,15 +1,23 @@
 .socials {
   ul {
     display: flex;
+    flex-wrap: wrap;
 
     margin: 0;
     padding: 0;
+
+    max-width: 170px;
 
     list-style: none;
   }
 
   li {
     margin-right: 15px;
+    margin-bottom: 7px;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
 
     &:last-child {
       margin-right: 0;

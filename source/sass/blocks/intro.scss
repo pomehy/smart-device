@@ -6,7 +6,7 @@
   background-size: cover;
 
   @media (min-resolution: 2dppx) {
-    background-image: url(".././img/intro-bg-desktop@2x.jpg");
+    background-image: url(".././img/intro-bg-desktop@2x.png");
   }
 }
 
@@ -202,7 +202,7 @@
     width: 670px;
     height: 641px;
 
-    background-image: url(".././img/decor/polygon-double.svg");
+    background-image: url("../../img/decor/polygon-double.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -239,16 +239,22 @@
     left: 19.5%;
     top: 66px;
 
+    min-height: 230px;
+
     &::before {
       top: -112px;
-      right: -288px;
+      left: 77px;
+      right: auto;
 
       height: 483px;
     }
 
     img {
-      right: 20%;
-      width: 91%;
+      right: 0;
+      left: -31%;
+      margin-right: auto;
+      margin-left: auto;
+      width: 292px;
     }
   }
 }

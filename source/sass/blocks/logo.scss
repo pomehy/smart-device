@@ -1,11 +1,6 @@
 .logo--header {
   @media (max-width: $mobile-width) {
     width: 150px;
-
-    .logo__title,
-    .logo__description {
-      display: none;
-    }
   }
 }
 

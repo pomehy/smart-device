@@ -16,7 +16,7 @@
     height: 154px;
 
     font-family: "PTMono", "Courier New", monospace;
-    font-weight: 400;
+    font-weight: 700;
     font-style: normal;
     font-size: 16px;
     line-height: 21px;
@@ -32,6 +32,7 @@
     box-sizing: border-box;
 
     &::placeholder {
+      font-weight: 400;
       color: $basic-white;
     }
 
@@ -141,7 +142,7 @@
     padding-left: 17px;
 
     font-family: "PTMono", "Courier New", monospace;
-    font-weight: 400;
+    font-weight: 700;
     font-style: normal;
     font-size: 16px;
     line-height: 22px;
@@ -151,6 +152,7 @@
     background-color: transparentize($basic-white, 0.9);
 
     &::placeholder {
+      font-weight: 400;
       color: $basic-white;
     }
 
