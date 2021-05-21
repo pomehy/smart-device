@@ -197,7 +197,8 @@
                   <input id="user-phone" name="user-phone" type="tel" data-field="user-phone" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" placeholder="Телефон" minlength="10" maxlength="12" required>
                 </li>
               </ul>
-              <textarea name="user-message" id="user-message" data-field="user-message" placeholder="Ваш вопрос"></textarea>
+              <label class="visually-hidden" for="user-message">Вопрос пользователя</label>
+              <textarea name="user-message" id="user-message" maxlength="350" rows="10" cols="30" data-field="user-message" placeholder="Ваш вопрос"></textarea>
               <div class="form__footer">
                 <button type="submit">Задать вопрос</button>
                 <div class="form__field form__field--personal-data">
@@ -297,26 +298,14 @@
         </div>
       </div>
     </div>
-    <div class="page-footer__legal-info legal-info">
-      <div class="legal-info__wrapper">
-        <div class="legal-info__copyright">
-          <ul>
-            <li>
-              Все права защищены
-            </li>
-            <li>
-              1999-2018 SD Smart Devices
-            </li>
-          </ul>
+    <div class="page-footer__legal legal">
+      <div class="legal__wrapper">
+        <div class="legal__copyright">
+          <p>Все права защищены</p>
+          <p>1999-2018 SD Smart Devices</p>
         </div>
-        <div class="legal-info__section legal-info__privacy">
-          <ul>
-            <li>
-              <a href="#">Условия конфиденциальности</a>
-            </li>
-          </ul>
-        </div>
-        <div class="legal-info__section legal-info__developer">
+        <div class="legal__info">
+          <a href="#">Условия конфиденциальности</a>
           <a href="#">Developed by wow studio</a>
         </div>
       </div>
@@ -340,7 +329,8 @@
                 <input id="callback-user-phone" name="user-phone" type="tel" data-field="user-phone" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" placeholder="Телефон" minlength="10" maxlength="12" required>
               </li>
             </ul>
-            <textarea name="user-message" id="callback-user-message" data-field="user-message" placeholder="Ваш вопрос"></textarea>
+            <label class="visually-hidden" for="user-message">Вопрос пользователя</label>
+            <textarea name="user-message" id="callback-user-message" maxlength="350"rows="10" cols="30" data-field="user-message" placeholder="Ваш вопрос"></textarea>
             <div class="form__footer">
               <button type="submit">Отправить</button>
               <div class="form__field form__field--personal-data">
