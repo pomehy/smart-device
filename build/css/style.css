@@ -58,7 +58,6 @@ img {
   overflow-x: hidden; }
 
 .page-body--no-scroll {
-  padding-right: 17px;
   overflow: hidden; }
 
 .page-header {
@@ -792,10 +791,14 @@ img {
     font-size: 14px;
     color: rgba(255, 255, 255, 0.8);
     cursor: pointer; }
-    .form__field--personal-data label:hover, .form__field--personal-data label:focus {
+    .form__field--personal-data label:hover {
       color: #ffffff; }
-      .form__field--personal-data label:hover::before, .form__field--personal-data label:focus::before {
+      .form__field--personal-data label:hover::before {
         border-color: #ffffff; }
+    .form__field--personal-data label:focus {
+      color: #000000; }
+      .form__field--personal-data label:focus::before {
+        border-color: #000000; }
     .form__field--personal-data label:active {
       opacity: 0.5; }
     .form__field--personal-data label::before {
@@ -998,8 +1001,8 @@ img {
     padding-left: 3px; }
     .about__text p:last-of-type {
       position: relative; }
-      .about__text p:last-of-type span {
-        display: none; } }
+    .about__text .about__hidden-tablet {
+      display: none; } }
 
 @media (max-width: 767px) {
   .about__text {
