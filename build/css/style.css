@@ -1762,6 +1762,12 @@ img {
     line-height: 21px;
     color: #ffffff;
     text-align: start; }
+  @media (max-width: 767px) {
+    .callback__content {
+      padding-top: 14px;
+      padding-right: 15px;
+      padding-bottom: 5px;
+      padding-left: 15px; } }
 
 .callback__form {
   margin-top: 34px; }
