@@ -784,6 +784,8 @@ img {
     top: 5px;
     left: 7px;
     width: 1px; }
+    .form__field--personal-data input:focus + label::before {
+      outline: #1b2d37 solid 2px; }
   .form__field--personal-data label {
     position: relative;
     padding-left: 32px;
@@ -791,14 +793,10 @@ img {
     font-size: 14px;
     color: rgba(255, 255, 255, 0.8);
     cursor: pointer; }
-    .form__field--personal-data label:hover {
+    .form__field--personal-data label:hover, .form__field--personal-data label:focus {
       color: #ffffff; }
-      .form__field--personal-data label:hover::before {
+      .form__field--personal-data label:hover::before, .form__field--personal-data label:focus::before {
         border-color: #ffffff; }
-    .form__field--personal-data label:focus {
-      color: #000000; }
-      .form__field--personal-data label:focus::before {
-        border-color: #000000; }
     .form__field--personal-data label:active {
       opacity: 0.5; }
     .form__field--personal-data label::before {
