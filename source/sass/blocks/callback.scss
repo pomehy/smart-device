@@ -1,10 +1,23 @@
+.callback__wrapper {
+  @include container;
+}
+
 .callback__content {
+  position: relative;
+
+  margin-right: auto;
+  margin-left: auto;
+
   padding-top: 29px;
   padding-right: 39px;
   padding-bottom: 11px;
   padding-left: 39px;
 
+  max-width: 490px;
+
   background-color: $fancy-color;
+
+  box-sizing: border-box;
 
   h3 {
     margin-top: 0;
@@ -25,6 +38,13 @@
     line-height: 21px;
     color: $basic-white;
     text-align: start;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 14px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    padding-left: 15px;
   }
 }
 
