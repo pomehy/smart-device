@@ -106,6 +106,10 @@ img {
 .page-header__logo {
   margin-right: 20px;
   padding-left: 6px; }
+  .page-header__logo a[href]:hover, .page-header__logo a[href]:focus {
+    opacity: 0.7; }
+  .page-header__logo a[href]:active {
+    opacity: 0.5; }
   @media (max-width: 1023px) {
     .page-header__logo {
       padding-left: 0; } }
@@ -226,6 +230,11 @@ img {
   @media (max-width: 1023px) {
     .page-main__intro {
       padding-top: 0; } }
+
+.page-main__callback {
+  padding-top: 120px;
+  padding-bottom: 50px;
+  background-color: #1b2d37; }
 
 .page-main__features {
   padding-top: 111px; }
@@ -1563,7 +1572,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 490px;
   width: 100%;
   margin: auto;
   -webkit-box-sizing: border-box;
@@ -1707,12 +1715,38 @@ img {
 .legal-info__developer {
   justify-self: end; }
 
+.callback__wrapper {
+  max-width: 1170px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  @media (max-width: 1023px) {
+    .callback__wrapper {
+      max-width: 1023px;
+      min-width: 768px;
+      padding-right: 25px;
+      padding-left: 25px; } }
+  @media (max-width: 767px) {
+    .callback__wrapper {
+      max-width: 767px;
+      min-width: 320px;
+      padding-right: 15px;
+      padding-left: 15px; } }
+
 .callback__content {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 29px;
   padding-right: 39px;
   padding-bottom: 11px;
   padding-left: 39px;
-  background-color: #00b2ff; }
+  max-width: 490px;
+  background-color: #00b2ff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
   .callback__content h3 {
     margin-top: 0;
     margin-bottom: 14px;
