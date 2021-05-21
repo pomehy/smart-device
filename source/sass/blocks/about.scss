@@ -163,11 +163,11 @@
     p {
       &:last-of-type {
         position: relative;
-
-        span {
-          display: none;
-        }
       }
+    }
+
+    .about__hidden-tablet {
+      display: none;
     }
   }
 
