@@ -58,6 +58,7 @@ img {
   overflow-x: hidden; }
 
 .page-body--no-scroll {
+  margin-left: -17px;
   overflow: hidden; }
 
 .page-header {
@@ -620,11 +621,11 @@ img {
   width: 100%;
   height: 154px;
   font-family: "PTMono", "Courier New", monospace;
-  font-weight: 700;
+  font-weight: 400;
   font-style: normal;
   font-size: 16px;
   line-height: 21px;
-  color: #ffffff;
+  color: #1b2d37;
   background-color: rgba(255, 255, 255, 0.1);
   border: none;
   overflow-y: auto;
@@ -742,6 +743,8 @@ img {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1; }
+  .form__field:nth-child(2n) {
+    margin-right: 0; }
   .form__field:last-child {
     margin-right: 0; }
   .form__field input {
@@ -751,11 +754,11 @@ img {
     padding-bottom: 16px;
     padding-left: 17px;
     font-family: "PTMono", "Courier New", monospace;
-    font-weight: 700;
+    font-weight: 400;
     font-style: normal;
     font-size: 16px;
     line-height: 22px;
-    color: #ffffff;
+    color: #1b2d37;
     border: none;
     background-color: rgba(255, 255, 255, 0.1); }
     .form__field input::-webkit-input-placeholder {
@@ -1584,24 +1587,6 @@ img {
     .modal__wrapper {
       max-width: 320px; } }
 
-.modal__close {
-  position: absolute;
-  z-index: 2;
-  top: 0;
-  right: 0;
-  width: 57px;
-  height: 57px;
-  background-color: transparent;
-  background-image: url(".././img/decor/cross-icon.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  border: none;
-  cursor: pointer; }
-  .modal__close:hover, .modal__close:focus {
-    opacity: 0.7; }
-  .modal__close:active {
-    opacity: 0.5; }
-
 .legal {
   border-top: 1px solid rgba(98, 105, 98, 0.2); }
   @media (max-width: 767px) {
@@ -1771,3 +1756,22 @@ img {
 
 .callback__form {
   margin-top: 34px; }
+
+.callback__close {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  width: 57px;
+  height: 57px;
+  background-color: transparent;
+  background-image: url(".././img/decor/cross-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer; }
+  .callback__close:hover, .callback__close:focus {
+    opacity: 0.7;
+    background-color: rgba(27, 45, 55, 0.2); }
+  .callback__close:active {
+    opacity: 0.5; }
