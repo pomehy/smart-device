@@ -16,11 +16,11 @@
     height: 154px;
 
     font-family: "PTMono", "Courier New", monospace;
-    font-weight: 700;
+    font-weight: 400;
     font-style: normal;
     font-size: 16px;
     line-height: 21px;
-    color: $basic-white;
+    color: $basic-blue-dark;
 
     background-color: transparentize($basic-white, 0.9);
 
@@ -129,6 +129,10 @@
   max-width: 50%;
   flex-grow: 1;
 
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+
   &:last-child {
     margin-right: 0;
   }
@@ -142,11 +146,11 @@
     padding-left: 17px;
 
     font-family: "PTMono", "Courier New", monospace;
-    font-weight: 700;
+    font-weight: 400;
     font-style: normal;
     font-size: 16px;
     line-height: 22px;
-    color: $basic-white;
+    color: $basic-blue-dark;
 
     border: none;
     background-color: transparentize($basic-white, 0.9);
