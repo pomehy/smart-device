@@ -25,6 +25,7 @@
     background-color: transparentize($basic-white, 0.9);
 
     border: none;
+    border-radius: 0;
 
     overflow-y: auto;
     resize: none;
@@ -153,6 +154,7 @@
     color: $basic-blue-dark;
 
     border: none;
+    border-radius: 0;
     background-color: transparentize($basic-white, 0.9);
 
     &::placeholder {
