@@ -15,8 +15,6 @@
   align-items: center;
 
   padding-top: 32px;
-  padding-right: 7px;
-  padding-left: 7px;
 
   max-width: 1440px;
 
@@ -31,7 +29,7 @@
 
 .page-header__logo {
   margin-right: 20px;
-  padding-left: 6px;
+  padding-left: 13px;
 
   a[href] {
     &:hover,
@@ -133,7 +131,7 @@
 }
 
 .page-header__callback {
-  padding-right: 10px;
+  padding-right: 17px;
 
   a {
     @include button;
