@@ -82,8 +82,6 @@ img {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 32px;
-  padding-right: 7px;
-  padding-left: 7px;
   max-width: 1440px; }
   @media (max-width: 1023px) {
     .page-header__wrapper {
@@ -106,7 +104,7 @@ img {
 
 .page-header__logo {
   margin-right: 20px;
-  padding-left: 6px; }
+  padding-left: 13px; }
   .page-header__logo a[href]:hover, .page-header__logo a[href]:focus {
     opacity: 0.7; }
   .page-header__logo a[href]:active {
@@ -179,7 +177,7 @@ img {
       margin-right: 24px; } }
 
 .page-header__callback {
-  padding-right: 10px; }
+  padding-right: 17px; }
   .page-header__callback a {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -306,7 +304,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-right: 7px;
   padding-left: 7px;
   max-width: 1440px;
   min-height: 759px; }
