@@ -132,6 +132,9 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-align: center;
@@ -141,9 +144,7 @@ img {
     padding: 0;
     list-style: none; }
   .page-header__contacts li {
-    margin-right: 88px; }
-    .page-header__contacts li:last-child {
-      margin-right: 0; }
+    margin-left: 88px; }
   .page-header__contacts a {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -151,6 +152,8 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
     line-height: 18px;
     color: #ffffff;
     text-decoration: none; }
@@ -520,7 +523,10 @@ img {
   margin-right: auto;
   margin-left: auto;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  max-width: 1190px;
+  padding-right: 10px;
+  padding-left: 10px; }
   @media (max-width: 1023px) {
     .features__wrapper {
       max-width: 1023px;
@@ -861,7 +867,10 @@ img {
   margin-left: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  position: relative; }
+  position: relative;
+  max-width: 1190px;
+  padding-right: 10px;
+  padding-left: 10px; }
   @media (max-width: 1023px) {
     .about__wrapper {
       max-width: 1023px;
@@ -1027,7 +1036,10 @@ img {
   margin-right: auto;
   margin-left: auto;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  max-width: 1190px;
+  padding-right: 10px;
+  padding-left: 10px; }
   @media (max-width: 1023px) {
     .offers__wrapper {
       max-width: 1023px;
@@ -1321,12 +1333,15 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-left: 2%;
   max-width: 45%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
-  .page-footer__nav ul:first-of-type {
-    margin-right: 16%; }
+  .page-footer__nav ul:last-of-type {
+    padding-right: 28px; }
   .page-footer__nav a {
     white-space: nowrap; }
   @media (max-width: 1023px) {
@@ -1458,7 +1473,10 @@ img {
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: flex-end; }
+          justify-content: flex-end;
+  max-width: 1190px;
+  padding-right: 10px;
+  padding-left: 10px; }
   @media (max-width: 1023px) {
     .feedback__wrapper {
       max-width: 1023px;
