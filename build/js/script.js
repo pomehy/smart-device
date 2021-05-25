@@ -73,9 +73,6 @@
             if (evt.type === 'blur' && inputForms[j].value.length < 5) {
               inputForms[j].value = '';
             }
-            if (inputForms[j].value.length < 1) {
-              inputForms[j].value = '+7';
-            }
           };
           inputForms[j].addEventListener('input', maskPhone, false);
           inputForms[j].addEventListener('focus', maskPhone, false);
