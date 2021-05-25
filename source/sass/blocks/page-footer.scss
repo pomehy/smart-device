@@ -195,6 +195,7 @@
 .page-footer__nav {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   padding-left: 2%;
 
   max-width: 45%;
@@ -202,8 +203,8 @@
   box-sizing: border-box;
 
   ul {
-    &:first-of-type {
-      margin-right: 16%;
+    &:last-of-type {
+      padding-right: 28px;
     }
   }
 
