@@ -4,6 +4,11 @@
 
 .offers__wrapper {
   @include container;
+
+  max-width: 1190px;
+
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .offers__description {
