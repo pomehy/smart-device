@@ -47,6 +47,10 @@
 
           const maskPhone = function (evt) {
             let keyCode = evt.keyCode;
+            var pos = inputForms[j].selectionStart;
+            if (pos < 2) {
+              evt.preventDefault();
+            }
             let matrix = '+7 (___) ___ ____';
             let i = 0;
             let def = matrix.replace(/\D/g, '');
@@ -69,10 +73,14 @@
             if (evt.type === 'blur' && inputForms[j].value.length < 5) {
               inputForms[j].value = '';
             }
+            if (inputForms[j].value.length < 1) {
+              inputForms[j].value = '+7';
+            }
           };
           inputForms[j].addEventListener('input', maskPhone, false);
           inputForms[j].addEventListener('focus', maskPhone, false);
           inputForms[j].addEventListener('blur', maskPhone, false);
+          inputForms[j].addEventListener('keydown', maskPhone, false);
         }
 
         if (inputForms[j].id === 'user-name' || inputForms[j].id === 'callback-user-name') {
