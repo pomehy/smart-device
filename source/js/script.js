@@ -124,6 +124,8 @@
           array.forEach(function (item, j) {
             if (j === index) {
               accrodionElements[j].classList.toggle('page-footer__accordion--active');
+            } else {
+              accrodionElements[j].classList.remove('page-footer__accordion--active');
             }
           });
         }
