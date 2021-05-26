@@ -214,6 +214,7 @@
 
   @media (max-width: $tablet-width) {
     padding-left: 0;
+    max-width: 50%;
 
     ul {
       &:first-of-type {
@@ -225,6 +226,7 @@
   @media (max-width: $mobile-width) {
     flex-direction: column;
     max-width: 100%;
+    width: 100%;
 
     ul {
       &:first-of-type {
