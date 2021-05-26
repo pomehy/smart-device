@@ -38,18 +38,18 @@
   position: relative;
   z-index: 1;
 
-  margin-bottom: 70px;
+  margin-bottom: 83px;
   width: 100%;
 
   h2 {
     margin-top: 0;
-    margin-bottom: 18px;
+    margin-bottom: 30px;
 
     font-family: "Roboto-Condensed", "Arial", sans-serif;
     font-weight: 700;
     font-size: 80px;
     line-height: 94px;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.075em;
     color: $basic-white;
 
     text-transform: uppercase;
@@ -57,7 +57,7 @@
 
   p {
     margin-top: 0;
-    margin-left: 7.1%;
+    margin-left: 7%;
     max-width: 683px;
 
     font-size: 22px;
