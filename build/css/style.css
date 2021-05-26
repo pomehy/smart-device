@@ -1392,7 +1392,7 @@ img {
         -ms-flex-align: center;
             align-items: center;
     cursor: pointer; }
-    .page-footer__accordion h2::before, .page-footer__accordion h2::after {
+    .page-footer__accordion h2::before {
       content: "";
       position: absolute;
       right: 15px;
@@ -1400,8 +1400,12 @@ img {
       height: 1px;
       background-color: #c4c4c4; }
     .page-footer__accordion h2::after {
-      -webkit-transform: rotate(90deg);
-              transform: rotate(90deg); }
+      content: "";
+      position: absolute;
+      right: 22px;
+      width: 1px;
+      height: 16px;
+      background-color: #c4c4c4; }
     .page-footer__accordion h2:hover, .page-footer__accordion h2:focus {
       opacity: 0.7; }
     .page-footer__accordion h2:active {
