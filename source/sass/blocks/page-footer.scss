@@ -269,8 +269,7 @@
 
       cursor: pointer;
 
-      &::before,
-      &::after {
+      &::before {
         content: "";
         position: absolute;
         right: 15px;
@@ -282,7 +281,14 @@
       }
 
       &::after {
-        transform: rotate(90deg);
+        content: "";
+        position: absolute;
+        right: 22px;
+
+        width: 1px;
+        height: 16px;
+
+        background-color: #c4c4c4;
       }
 
       &:hover,
