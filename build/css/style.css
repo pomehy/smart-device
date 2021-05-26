@@ -168,7 +168,8 @@ img {
       margin-right: 0;
       padding-bottom: 7px; }
       .page-header__contacts li {
-        margin-right: 33px; }
+        margin-right: 0;
+        margin-left: 33px; }
       .page-header__contacts svg {
         margin-right: 0;
         width: 24px;
@@ -1349,7 +1350,7 @@ img {
   @media (max-width: 1023px) {
     .page-footer__nav {
       padding-left: 0;
-      width: 100%; }
+      max-width: 50%; }
       .page-footer__nav ul:first-of-type {
         padding-left: 0; } }
   @media (max-width: 767px) {
@@ -1358,7 +1359,8 @@ img {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      max-width: 100%; }
+      max-width: 100%;
+      width: 100%; }
       .page-footer__nav ul:first-of-type {
         padding-left: 15px; } }
 
